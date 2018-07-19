@@ -1,0 +1,66 @@
+<include file="Public:header" />
+
+<body style="background-color:#f2f9fd;">
+
+<div class="header bg-main">
+    <div class="logo margin-big-left fadein-top">
+        <h1><img src="__IMAGES__y.jpg" class="radius-circle rotate-hover" height="50" alt="" />社区矫正自助一体机</h1>
+    </div>
+
+    <div class="head-l" style="float: right; padding-right: 20px;">
+        <a href="{$site_url}" class="button button-little bg-green" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
+        <!--<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a>-->
+        <a href="__MODULE__/Public/loginOut" class="button button-little bg-red"><span class="icon-power-off"></span> 退出登录</a>
+    </div>
+</div>
+
+<div class="leftnav">
+    <h2><span class="icon-user"></span>文章</h2>
+    <ul style="display:block">
+        <li><a href="__MODULE__/Article/" target="right"><span class="icon-caret-right"></span>文章列表</a></li>
+        <li><a href="__MODULE__/Article/add" target="right"><span class="icon-caret-right"></span>添加文章</a></li>
+        <foreach name="pagenav" item="nav">
+            <li><a href="__MODULE__/Page/index/?id={$nav.id}" target="right"><span class="icon-caret-right"></span>{$nav.name}</a></li>
+        </foreach>
+        <li><a href="__MODULE__/Articlecategory/" target="right"><span class="icon-caret-right"></span>文章分类</a></li>
+    </ul>
+
+    <h2><span class="icon-user"></span>预约</h2>
+    <ul style="display:none">
+        <li><a href="__MODULE__/Appointment/undeal" target="right"><span class="icon-caret-right"></span>待处理</a></li>
+        <li><a href="__MODULE__/Appointment/index" target="right"><span class="icon-caret-right"></span>所有预约</a></li>
+    </ul>
+
+    <h2><span class="icon-user"></span>档案管理</h2>
+    <ul style="display:none">
+        <li><a href="__MODULE__/Dangan/index" target="right"><span class="icon-caret-right"></span>所有档案</a></li>
+        <li><a href="__MODULE__/Dangan/add" target="right"><span class="icon-caret-right"></span>添加档案</a></li>
+    </ul>
+
+    <h2><span class="icon-user"></span>基本设置</h2>
+    <ul style="display:none">
+        <li><a href="__MODULE__/site/" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
+		<li><a href="__MODULE__/site/updatePwd" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+    </ul>
+</div>
+
+<div class="admin">
+    <iframe scrolling="auto" rameborder="0" src="__MODULE__/Appointment/undeal.html" name="right" width="100%" height="100%"></iframe>
+</div>
+
+</body>
+<include file="Public:footer" />
+
+<script type="text/javascript">
+    $(function(){
+        $(".leftnav h2").click(function(){
+            $(this).next().slideToggle(200);
+            $(this).toggleClass("on");
+        })
+        $(".leftnav ul li a").click(function(){
+            $("#a_leader_txt").text($(this).text());
+            $(".leftnav ul li a").removeClass("on");
+            $(this).addClass("on");
+        })
+    });
+</script>

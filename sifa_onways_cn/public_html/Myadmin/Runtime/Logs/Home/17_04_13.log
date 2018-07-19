@@ -1,0 +1,489 @@
+[ 2017-04-13T11:53:10+08:00 ] 61.52.130.123 /myadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] Undefined index: admin /www/web/sifa_onways_cn/public_html/Myadmin/Home/Controller/CommonController.class.php 第 20 行.
+
+[ 2017-04-13T11:53:10+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `f_admin` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-04-13T11:54:34+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `f_admin` [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-04-13T11:55:08+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `f_admin` [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002401s ]
+
+[ 2017-04-13T11:56:16+08:00 ] 61.52.130.123 /myadmin.php/Home/Public/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `f_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_admin` WHERE `uname` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-04-13T11:56:16+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-04-13T11:56:16+08:00 ] 61.52.130.123 /myadmin.php/Home/Appointment/undeal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_appointment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_appointment` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SELECT * FROM `f_appointment` WHERE `status` = 0 ORDER BY id desc LIMIT 0,6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-04-13T11:56:18+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: keywords /www/web/sifa_onways_cn/public_html/Myadmin/Runtime/Cache/Home/a339db4d518d987e79413f1e73ad7385.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-04-13T11:56:20+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-04-13T11:59:42+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: validate /www/web/sifa_onways_cn/public_html/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/sifa_onways_cn/public_html/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `f_article` (`cate_id`,`title`,`sort`,`content`,`desc`,`pub_time`) VALUES ('7','分神','0','<p style=\"text-align: center;\"><img src=\"/Uploads/image/2017-04-13/1492055841810562.jpeg\" title=\"1492055841810562.jpeg\" alt=\"mp53790790_1452482452551_4.jpeg\"/></p><p>1、定义 分神是指心理活动能够有选择地指向一定事物，却难以稳定地集中于该事物的注意失调，也称为走神。 &amp;nbsp;</p><p>2、表现在必要时间内，心理活动的集中处在松弛的状态或不能集中在所指向的事物上。 分神通常发生在对自己有特定意义或重要意义的活动中。 &amp;nbsp;</p><p>3、与注意分散的区别 后者往往是由内外干扰造成的，通过自我提醒等方法可以使注意集中，即可以自控，前者则难</p><p><br/></p>','1、定义 分神是指心理活动能够有选择地指向一定事物，却难以稳定地集中于该事物的注意失调，也称为走神。 &amp;nbsp;2、表现在必要时间内，心理活动的集中处在松弛的状态或不能集中在所指向的事物上。 分神通常发生在对自己有特定意义或重要意义的活动中。 &amp;nbsp;3、与注意分散的区别 后者往往是由内外干扰造成的，通过自我提醒等方法可以使注意集中，即可以自控，前者则难','1492055982') [ RunTime:0.0003s ]
+
+[ 2017-04-13T11:59:42+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_article` ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: keywords /www/web/sifa_onways_cn/public_html/Myadmin/Runtime/Cache/Home/a339db4d518d987e79413f1e73ad7385.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-04-13T11:59:45+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-04-13T12:00:09+08:00 ] 61.52.130.123 /myadmin.php/Home/Articlecategory/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-04-13T14:42:33+08:00 ] 61.52.130.123 /myadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-04-13T14:42:34+08:00 ] 61.52.130.123 /myadmin.php/Home/Appointment/undeal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_appointment` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_appointment` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_appointment` WHERE `status` = 0 ORDER BY id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-04-13T14:42:35+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-04-13T14:42:37+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: keywords /www/web/sifa_onways_cn/public_html/Myadmin/Runtime/Cache/Home/a339db4d518d987e79413f1e73ad7385.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-04-13T14:42:37+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2017-04-13T14:45:00+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: validate /www/web/sifa_onways_cn/public_html/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/sifa_onways_cn/public_html/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `f_article` (`cate_id`,`title`,`sort`,`content`,`desc`,`pub_time`) VALUES ('7','中学生常见心理问题分析及建议','0','<p style=\"text-align: center;\"><img src=\"/Uploads/image/2017-04-13/1492065842316722.png\" title=\"1492065842316722.png\" alt=\"1491456949510340.png\"/></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">中学时期是成长发育过程的一个阶段，也是人生迈向成熟的一个重要阶段，然而在这一时期，由于身心发展不健全以及外在因素的影响使得中学生容易产生一些心理问题。心理问题严重影响到了中学生的正常成长和发展，我们只有正确认知这些心理问题，并提前预见并采取措施积极应对，才能为青少年的健康成长&quot;保驾护航&quot;。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　一、叛逆心理</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　叛逆心理是指人们为了维护自尊，而对对方的要求采取相反的态度和言行的一种心理状态。叛逆心理是青少年成长过程中经常会出现的一种心理状态，是该年龄阶段青少年的一个突出的心理特点。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　中学生产生叛逆心理主要有以下几点原因：首先，家长身上总是带有一些专制的传统思想，他们认为自己在家中就是权威，孩子要绝对服从自己，他们认为中学生的想法都是幼稚的。中学生没有自己独立感，他们与父母缺乏交流的平台，家长和孩子之间没有民主的对话平台，因此容易产生思想矛盾，引发中学生的叛逆心理。其次是家长对孩子的心理成长没有正确认识，他们缺乏相关的心理学知识，不能及时预见和引导中学生远离叛逆心理。最后，学校没能及时针对中学生展开心理知识普及和教育，没能让学生正确认识到自己。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　二、自卑心理</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　自卑心理是中学生对自己过度不自信的一种表现，在实际生活中，畏首畏尾，随声附和，没有自己的主见，一遇到有错误的事情就以为是自己不好，过低估自己的能力，觉得自己各方面不如人。在性格上通常表现为害羞、内疚、忧郁、焦虑、失望。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　这种心理问题产生的原因可能有以下几种情况：</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　一、家庭经济情况，一些中学生由于自己家庭经济条件较差，和别人相比，在衣着、饮食、人情消费等方面都感觉自己很&quot;没面子&quot;，进而产生自卑心理。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　二、个人的成长经历情况，有些中学生在自己的成长过程中可能遭受过打击，没能及时走出心理阴影，时间久了就很难恢复对自己的自信，从而产生自卑的心理问题。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　三、个人的性格情况，性格内向的中学生对事物过于敏感，对一些消极事物和消极影响没能及时和恰当的宣泄和排解，在自己内心中不断放大。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　四、教师和家长没能及时预见和帮助中学生走出这种心理状态，会让中学生感到无助，缺乏交流对象，不能及时和自己信任的人交流，可能会使自己更加过低评价自己。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　三、嫉妒心理</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　嫉妒是指人们为竞争一定的权益，对相应的幸运者或潜在的幸运者怀有的一种冷漠、贬低、排斥、甚至是敌视的心理状态。这种心理问题的中学生可能会有不怀好意的中伤他人，经常以自己为中心，不能正确认识到自己的不足之处。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　导致中学生产生嫉妒心理的因素有以下几个方面：</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　一方面是自己不能正确认识自己，不能正确的处理自己和同学之间的矛盾。盲目的攀比，一旦自己不如别人时，就消极怠工，不去从自身寻找原因，自身一味的怨恨别人，从羡慕到嫉妒，由嫉妒生恨。另一方面是家庭和学校没能提前预见学生的这种心理，以至不能及时帮助学生。即使一些家长和教师意思到了学生的这种情绪，由于缺乏心理学方面的知识，交流不当等，也不能帮助中学生摆脱这种心理问题。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　四、正确应对中学生心理问题的建议</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　1、家庭因素</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　家长是学生的第一任老师，家长应该把好孩子健康成长的第一关。中学生有自己的想法和认识，父母应该充分尊重和相信孩子，积极的与自己的孩子交流，家庭管理上应尽量采用民主的方式，帮助孩子健康成长。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　2、学校因素</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　教师应更加主动地和那些问题学生沟通和交流，转变教学观念，适当地缓解和调和学生的学习压力，充分重视学生的心理健康成长。另外，学校应加强学校心理咨询机构建设、管理、宣传。</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　3、个人因素</span></p><p><span style=\"font-size: 14px; font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;\">　　积极和同学、老师、家长交流，充分相信他们，遇到问题积极向他们倾述，努力寻求帮助。认真学习学校开设的有关心理问题的课程，以便正确认识自己，使学生自己有能力进行自我教育，当自己遇到问题时，可以及时正确处理。</span></p><p><br/></p>','中学时期是成长发育过程的一个阶段，也是人生迈向成熟的一个重要阶段，然而在这一时期，由于身心发展不健全以及外在因素的影响使得中学生容易产生一些心理问题。心理问题严重影响到了中学生的正常成长和发展，我们只有正确认知这些心理问题，并提前预见并采取措施积极应对，才能为青少年的健康成长&quot;保驾护航&quot;。　　一、叛逆心理　　叛逆心理是指人们为了维护自尊，而对对方的要求采取相反的态度和言行的一种心理状态。叛逆心理是青少年成长过程中经常会出现的一种心理状态，是该年龄阶段青少年的一个突出的心理特点。　　中学生产生叛逆心理主要有以下几点原因：首先，家长身上总是带有一些专制的传统思想，他们认为自己在','1492065900') [ RunTime:0.0006s ]
+
+[ 2017-04-13T14:45:00+08:00 ] 61.52.130.123 /myadmin.php?m=Home&c=Article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: keywords /www/web/sifa_onways_cn/public_html/Myadmin/Runtime/Cache/Home/a339db4d518d987e79413f1e73ad7385.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-04-13T14:45:03+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/edit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-04-13T14:45:09+08:00 ] 61.52.130.123 /myadmin.php/Home/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'page'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `f_category` WHERE `model_name` = 'category'  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: keywords /www/web/sifa_onways_cn/public_html/Myadmin/Runtime/Cache/Home/a339db4d518d987e79413f1e73ad7385.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+

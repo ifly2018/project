@@ -1,0 +1,6 @@
+@media (min-width: 760px){
+    .form-x .form-group .label {width:100px; }
+}
+
+.note{display:none; position: fixed; top:71px; left:50%; margin-left: -300px; width: 400px; text-align: center; line-height: 50px;
+    background: #C7EFFF; border: 2px solid #00aaee; border-radius: 10px;}

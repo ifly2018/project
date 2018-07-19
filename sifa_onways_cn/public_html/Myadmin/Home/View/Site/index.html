@@ -1,0 +1,110 @@
+<include file="Public:header" />
+<body>
+<ul class="bread">
+    <li>网站配置</li>
+</ul>
+
+<div class="panel admin-panel">
+    <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 网站信息</strong></div>
+    <div class="body-content">
+        <form method="post" class="form-x" action="__URL__/save">
+
+            <div class="form-group">
+                <div class="label"><label>网站域名：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="SITE_URL" value="{$data.SITE_URL}" /> 以斜杠 '/' 结尾
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label>网站标题：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="SITE_TITLE" value="{$data.SITE_TITLE}" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label>关键字：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="KEYWORD" value="{$data.KEYWORD}" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label>描述：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="DESCRIBE" value="{$data.DESCRIBE}" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label>分页数：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="PAGESIZE" value="{$data.PAGESIZE}" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label>地址：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="ADDRESS" value="{$data.ADDRESS}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label"><label>电话：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="TEL" value="{$data.TEL}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label"><label>手机：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="MOBILE" value="{$data.MOBILE}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label"><label>邮箱：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="EMAIL" value="{$data.EMAIL}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label"><label>版权：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="COPYRIHT" value="{$data.COPYRIHT}" />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="label"><label>微博：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="WEIBO" value="{$data.WEIBO}" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label"><label>QQ：</label></div>
+                <div class="field">
+                    <input type="text" class="input" name="QQ" value="{$data.QQ}" />
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <div class="label"><label></label></div>
+                <div class="field">
+                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<include file="Public:footer" />
+
+
+
+

@@ -1,0 +1,82 @@
+body{width: 1280px; height: 1024px; margin: 0 auto; font-family: "微软雅黑","宋体",Arial,Helvetica,sans-serif;;}
+
+.close-win{background: url(../img/closeWin.png) no-repeat;width: 88px; height:89px; position:absolute; bottom:30px; left:50px;}
+
+.index{background: url(../img/index.jpg) no-repeat;width: 1280px; height: 1024px; position: relative;}
+.index-button{display:block; width: 174px; height: 228px; position: absolute;  }
+.knowledge{top:326px; left: 278px;}
+.community{top:326px; left: 548px;}
+.active{top:326px; left: 820px;}
+.aid{top:614px; left: 278px;}
+.sun{top:614px; left: 548px;}
+.subscribe{top:614px; left: 820px;}
+
+.listbg{background: url(../img/listbg.jpg) no-repeat;width: 1280px; height: 1024px; position: relative;}
+.back{background: url(../img/back.jpg) no-repeat; width:59px; height: 57px; position: absolute; top:68px; left: 60px;}
+.list-wap{position:absolute; box-sizing: border-box; padding: 26px; top:170px;left: 60px; width:1160px; height: 800px;
+	 border-radius: 10px; background: #fff;}
+.list-tab{font-size: 26px; width: 1170px; overflow: hidden;}	 
+.list-tab li{float: left; margin-right: 8px; width: 270px; height: 68px; text-align: center;
+	line-height: 68px; color: #fff;
+	border-radius: 5px; background:#4690f6; cursor: pointer;}
+.list-tab li a{color: #fff;}
+.list-tab li.current{background: #f76d5b;}
+
+#tab{width:97%; overflow: hidden;}
+.lists{margin-top: 15px;}
+.list{border-bottom: 1px dashed #fbdfd8; padding: 15px 0px;}
+.list .list-left{width: 90px; float: left; text-align: center;}
+.list .list-desc{color: #656565;}
+.list .list-desc h2{font-size: 24px;}
+.list .list-desc-txt{font-size: 18px; margin-top: 4px;}
+.list-class{display: block;}
+
+.appo_list{ height: 190px; padding: 15px 0px;}
+.appo_list-left{width: 184px;}
+.appo_list-left img{width: 130px; height: auto;}
+.appo_list-desc{width: 690px;}
+.appo_list-desc-txt{line-height: 30px;}
+.app_list_yuyue{width: 150px; padding-top: 38px;}
+.app_list_yuyue a{background: #f76d5b; color: #fff; height: 52px; line-height: 52px; font-size: 22px; padding: 5px 52px;border-radius: 19px;}
+
+.content-wrap{margin-top: 30px; color: #656565;}
+.content-wrap h2{font-size: 34px; border-bottom: 1px dashed #dedede; text-align: center; padding: 0px 0px 15px 0px;}
+.content{height: 516px; padding: 20px 0px; overflow-y: scroll;}
+
+.pages{width: 400px; height: 58px; margin: 0 auto;}
+.pages a{display:block; width: 156px; height: 58px; background: #4690f6;
+	color: #fff; text-align: center; border-radius: 10px;  font-size: 24px; line-height: 58px;}
+
+.page{width: 450px; height: 58px; margin: 0 auto; margin-top: 30px;}
+.page div{overflow:hidden;}
+.page a,.page span{display:block; float:left; width: 18px; height: 18px; background: #4690F6; color: #4690F6;
+	text-align: center; border-radius: 50%;  font-size: 0px; margin-right: 10px; line-height: 58px;}
+.page span{background: #f76d5b;margin-top: 22px; }
+.page .prev{background: url("../img/pleft.png") no-repeat;height: 60px;width: 60px;}
+.page .prevs{background: url("../img/pleft-v.png") no-repeat;height: 60px;width: 60px;}
+.page .next{background: url("../img/pright.png") no-repeat;width: 60px; height: 60px;}
+.page .nexts{background: url("../img/pright-v.png") no-repeat;width: 50px; height: 50px;}
+.page .num{ margin-top: 22px;}
+.page .sheng{background: url("../img/d.png") no-repeat;width: 34px; height: 4px; margin-top:29px; }
+.page .end,.page .first{display: none;}
+
+.yuyue{ overflow: hidden;}
+.yuyue img{float: left; width: 208px; height: 286px; margin-top: 120px;}
+.yuyue .online{margin-left: 164px;float: left; }
+.yuyue .yuyue{margin-right: 164px;float: right;}
+
+.msg{margin-top: 40px;}
+.msgparam{width: 680px; margin: 0 auto; overflow: hidden;margin-bottom: 20px;}
+.msgparam div:first-child{font-size: 22px; line-height:64px; width: 138px; text-align: right;}
+.msgparam div label{line-height:64px;  font-size: 22px;}
+.msgparam .input{height:64px; border: 1px solid #d2d2d2; border-radius: 5px;text-indent: 10px; width: 520px; font-size: 20px;}
+.msgparam .inputerr{ border: 2px solid red;}
+.msgparam .texts{width: 520px; height:100px; text-indent: 10px; padding:10px 0px; border: 1px solid #d2d2d2; border-radius: 5px;}
+.msgparam button{margin-left: 138px; background: #f45252; border: 0; font-size: 24px;
+	line-height: 60px;color: #fff; width: 520px; border-radius: 5px; cursor: pointer;}
+.msgparam div:last-child{position: relative;}
+.msgparam div:last-child span{position: absolute; top: 20px; right: 10px;color:red;}
+
+.stat{padding-top: 100px; text-align: center;}
+
+.content{line-height: 32px;}

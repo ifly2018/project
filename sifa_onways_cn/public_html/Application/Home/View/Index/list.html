@@ -1,0 +1,50 @@
+<include file="Public:header" />
+
+<div class="listbg">
+    <div class="back">
+        <a href="{:u('index/index')}"> <img src="__PUBLIC__/img/back.jpg"/> </a>
+    </div>
+
+    <div class="list-wap">
+        <div class="list-tab">
+            <ul id="tab">
+                <foreach name="submenu" item="menu" key="key">
+                    <a href="{:u('list/sublist', array('subid'=>$menu['id']) )}">
+                        <li <if condition="$curid eq $menu['id']">class="current"</if>>{$menu.name}</li>
+                    </a>
+                </foreach>
+            </ul>
+        </div>
+
+        <div class="lists">
+            <div id="tab1" class="list-class">
+                <foreach name="data" item="d" key="key">
+                <div class="list">
+                    <a href="{:u('show/index', array('id'=>$d['id']) )}">
+                        <div class="list-left">
+                            <if condition="$d.thumb neq null">
+                                <img src="__PUBLIC__/img/{$d.thumb}" />
+                            <else />
+                                <img src="__PUBLIC__/img/tmp/t.jpg" />
+                            </if>
+                        </div>
+                        <div class="list-desc">
+                            <h2>{$d.title}</h2>
+                            <div class="list-desc-txt">
+                                {$d.desc|msubstr=0,56}...
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                </foreach>
+            </div>
+            <div class="page">
+                {$page}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="__PUBLIC__/js/tab.js" type="text/javascript" charset="utf-8"></script>
+<include file="Public:footer" />

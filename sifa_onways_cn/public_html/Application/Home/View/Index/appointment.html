@@ -1,0 +1,41 @@
+<include file="Public:header" />
+
+<div class="listbg">
+    <div class="back">
+        <a href="{:u('index/index')}"> <img src="__PUBLIC__/img/back.jpg"/> </a>
+    </div>
+
+    <div class="list-wap">
+        <div class="list-tab">
+            <ul id="tab">
+                <a href="{:u('list/sublist', array('subid'=>23) )}">
+                    <li style="width: 48.5%;">咨询流程</li>
+                </a>
+
+                <li class="current" style="width: 48.5%;">预约系统</li>
+
+            </ul>
+        </div>
+
+        <div class="yuyue">
+
+			<!--<a href="http://p.qiao.baidu.com/cps/chat?siteId=10374064&userId=23145856">	-->		
+			<a onclick="return tall();">	
+			<img class="online" src="__PUBLIC__/img/online.jpg" border='0' />
+			</a>
+          
+            <a href="{:u('list/sublist', array('subid'=>24) )}">
+                <img src="__PUBLIC__/img/yuyue.jpg" class="yuyue"/>
+            </a>
+        </div>
+
+    </div>
+</div>
+<script>
+function tall(){
+	window.open('http://p.qiao.baidu.com/cps/chat?siteId=10590475&userId=23637612','newwindow','height=670,width=600');
+}
+</script>
+
+
+<include file="Public:footer" />

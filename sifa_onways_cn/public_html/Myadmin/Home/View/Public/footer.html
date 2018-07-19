@@ -1,0 +1,82 @@
+<script>
+$("#file0").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumb").show();
+        $("#img0").attr("src", objUrl) ;
+    }
+}) ;
+$("#file1").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img1").attr("src", objUrl) ;
+    }
+}) ;
+$("#file2").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img2").attr("src", objUrl) ;
+    }
+}) ;
+$("#file3").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img3").attr("src", objUrl) ;
+    }
+}) ;
+$("#file4").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img4").attr("src", objUrl) ;
+    }
+}) ;
+$("#file5").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img5").attr("src", objUrl) ;
+    }
+}) ;
+$("#file6").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;
+    console.log("objUrl = "+objUrl) ;
+    if (objUrl) {
+        $("#thumbs").show();
+        $("#img6").attr("src", objUrl) ;
+    }
+}) ;
+
+function getObjectURL(file) {
+    var url = null ;
+    if (window.createObjectURL!=undefined) { // basic
+        url = window.createObjectURL(file) ;
+    } else if (window.URL!=undefined) { // mozilla(firefox)
+        url = window.URL.createObjectURL(file) ;
+    } else if (window.webkitURL!=undefined) { // webkit or chrome
+        url = window.webkitURL.createObjectURL(file) ;
+    }
+    return url ;
+}
+
+$("#checkall").click(function(){
+    $("input[name='id[]']").each(function(){
+        if (this.checked) {
+            this.checked = false;
+        }
+        else {
+            this.checked = true;
+        }
+    });
+})
+</script>
+</html>

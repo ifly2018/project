@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<body>
+<form method="post" action="__URL__/del?all=1">
+    <div class="panel admin-panel">
+       <table class="table table-hover text-center">
+            <tr>
+                <th width="120">ID</th>
+                <th>姓名</th>
+                <th>电话</th>
+                <th>问题</th>
+                <th>年龄</th>
+                <th>预约人</th>
+                <th>申请时间</th>
+                <th>操作</th>
+            </tr>
+
+            <foreach name="data" item="d" key="key">
+            <tr id="list{$d.id}">
+                <td>{$d.id}</td>
+                <td>{$d.name} <if condition="$d.sex eq 1">先生<else />女士</if></td>
+                <td>{$d.tel}</td>
+                <td>{$d.content}</td>
+                <td>{$d.age}</td>
+                <td>{$d.mem_name}</td>
+                <td>{$d.time|date='Y-m-d H:i:s',###}</td>
+                <td>
+                    <div class="button-group">
+                        <if condition="$d.status eq 0">
+                            <a onclick="dodeal({$d.id})">处理</a>
+                        </if>
+                    </div>
+                </td>
+            </tr>
+            </foreach>
+
+            <tr>
+                <td colspan="8">
+                    <div class="pagelist">{$page}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+
+<script type="text/javascript">
+    function dodeal(id) {
+        var url = "__URL__/deal";
+        $.post(url,{id:id},function (ret) {
+            if(ret.status == 1){
+                $("#list" + id).remove();
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
+
+

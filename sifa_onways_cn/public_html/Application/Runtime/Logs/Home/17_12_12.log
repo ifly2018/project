@@ -1,0 +1,153 @@
+[ 2017-12-12T00:29:32+08:00 ] 123.125.71.74 /list-index-cid-1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 1  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 7 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-12-12T01:35:55+08:00 ] 123.125.71.45 /list-index-cid-5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 5  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 21 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-12-12T02:42:18+08:00 ] 123.125.71.47 /show-index-id-1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `f_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid` FROM `f_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `f_category` WHERE `pid` = 1  [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `f_article` WHERE ( id>1 AND cate_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id` FROM `f_article` WHERE ( id<1 AND cate_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: page /www/web/sifa_onways_cn/public_html/Application/Runtime/Cache/Home/3b6891c7cb83d3cb00b92e5716eff3af.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-12-12T03:48:42+08:00 ] 220.181.108.113 /list-index-cid-2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 2  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 11 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-12-12T04:55:05+08:00 ] 123.125.71.50 /list-index-cid-4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 4  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 18 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-12-12T06:01:28+08:00 ] 220.181.108.143 /list-index-cid-3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 3  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 16 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+

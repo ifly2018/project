@@ -1,0 +1,44 @@
+<include file="Public:header" />
+
+<div class="listbg">
+    <div class="back">
+        <a href="{:u('index/index')}"> <img src="__PUBLIC__/img/back.jpg"/> </a>
+    </div>
+
+    <div class="list-wap">
+        <div class="list-tab">
+            <ul id="tab">
+                <foreach name="submenu" item="menu" key="key">
+                    <a href="{:u('list/sublist', array('subid'=>$menu['id']) )}">
+                        <li <if condition="$curid eq $menu['id']">class="current"</if>>{$menu.name}</li>
+                    </a>
+                </foreach>
+            </ul>
+        </div>
+
+        <div class="lists">
+            <div id="tab1" class="list-class">
+                <foreach name="data" item="d" key="key">
+                    <div class="appo_list">
+                        <div class="appo_list-left fl">
+                            <if condition="$d.thumb neq null"> <img src="__PUBLIC__/img/{$d.thumb}" />
+                            <else /> <img src="__PUBLIC__/img/tmp/t.jpg" />  </if>
+                        </div>
+                        <div class="appo_list-desc fl">
+                            <h2>{$d.title}</h2>
+                            <div class="appo_list-desc-txt">{$d.desc}</div>
+                        </div>
+                        <div class="app_list_yuyue fr">
+                            <a href="{:u('Appointment/index', array('id'=>$d['id']) )}">预约</a>
+                        </div>
+                    </div>
+                </foreach>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="__PUBLIC__/js/tab.js" type="text/javascript" charset="utf-8"></script>
+
+<include file="Public:footer" />

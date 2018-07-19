@@ -1,0 +1,26 @@
+[ 2017-12-13T04:05:39+08:00 ] 123.125.71.117 /list-sublist-subid-24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`model_name` FROM `f_category` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name`,`pid`,`display` FROM `f_category` WHERE `pid` = 6  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `f_article` WHERE `cate_id` = 24 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `f_article` WHERE `cate_id` = 24 ORDER BY sort desc,pub_time desc,id desc LIMIT 0,3   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+

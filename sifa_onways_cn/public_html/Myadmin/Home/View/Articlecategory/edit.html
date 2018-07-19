@@ -1,0 +1,54 @@
+<include file="Public:header" />
+<body>
+<ul class="bread">
+    <li>编辑分类</li>
+</ul>
+
+<div class="panel admin-panel">
+    <div class="body-content">
+
+        <form method="post" class="form-x" action="__URL__/save" enctype="multipart/form-data" >
+
+            <div class="form-group">
+                <div class="label"><label>上级分类：</label></div>
+                <div class="field">
+                    <select name="pid" class="input w50">
+                        <option value="0" <if condition="$data['pid'] eq '0'">selected</if> >顶级</option>
+                        <foreach name="category" item="cate" key="key">
+                            <option value="{$cate.id}" <if condition="$data['pid'] eq $cate['id']">selected</if> >{$cate.html}{$cate.name}</option>
+                        </foreach>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"> <label>分类名称：</label> </div>
+                <div class="field"> <input type="text" class="input" name="name" value="{$data.name}" /> </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"> <label>单网页：</label> </div>
+                <div class="field">
+                    <input type="radio" name="model_name" value="category" <if condition="$data.model_name eq 'category'">checked</if> /> 否 &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="model_name" value="page" <if condition="$data.model_name eq 'page'">checked</if>  /> 是
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"> <label>排序：</label> </div>
+                <div class="field"> <input type="text" class="input w50" name="sort" value="{$data.sort}" /> </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label"><label></label> </div>
+                <div class="field">
+                    <input type="hidden" name="display" value="0" />
+                    <input type="hidden" name="id" value="{$data.id}" />
+                    <button class="button bg-main icon-check-square-o" type="submit">编 辑</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<include file="Public:footer" />

@@ -1,0 +1,40 @@
+<include file="Public:header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/scroll.css"/>
+<div class="listbg">
+    <div class="back">
+        <a href="javascript:history.go(-1);"> <img src="__PUBLIC__/img/back.jpg"/> </a>
+    </div>
+
+    <div class="list-wap">
+        <div class="list-tab">
+            <if condition="$data.cate_id neq 26">
+            <ul id="tab">
+                <foreach name="submenu" item="menu" key="key">
+                    <a href="{:u('list/sublist', array('subid'=>$menu['id']) )}">
+                        <li <if condition="$curid eq $menu['id']">class="current"</if>>{$menu.name}</li>
+                    </a>
+                </foreach>
+            </ul>
+            </if>
+        </div>
+
+
+        <div class="content-wrap">
+            <h2>{$data.title}</h2>
+            <div class="content" >
+                {$data.content}
+            </div>
+        </div>
+        <div style="height: 30px"></div>
+        <if condition="$page eq null">
+        <div class="pages">
+            <a href="{:u('show/index', array('id'=>$prev['id']) )}" class="fl">上一篇</a>
+            <a href="{:u('show/index', array('id'=>$next['id']) )}" class="fr">下一篇</a>
+        </div>
+        </if>
+    </div>
+
+
+</div>
+<script src="__PUBLIC__/js/tab.js" type="text/javascript" charset="utf-8"></script>
+<include file="Public:footer" />

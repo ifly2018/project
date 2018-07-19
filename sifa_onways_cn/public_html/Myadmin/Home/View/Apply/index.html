@@ -1,0 +1,71 @@
+<include file="Public:header" />
+<body>
+ <form method="post" action="__URL__/del?all=1">
+    <div class="panel admin-panel">
+        <div class="panel-head"><strong class="icon-reorder"> 售后申请</strong></div>
+
+        <table class="table table-hover text-center">
+            <tr>
+                <th>申请时间</th>
+                <th>姓名</th>
+                <th>电话</th>
+                <th>地址</th>
+                <th>机型</th>
+                <th>购买日期</th>
+                <th>情况说明</th>
+                <th>照片</th>
+
+            </tr>
+
+            <foreach name="data" item="d" key="key">
+            <tr id="list{$d.id}">
+                <td>{$d.apply_time|date="Y-m-d H:i:s",###}</td>
+                <td>{$d.name}</td>
+                <td>{$d.tel}</td>
+                <td>{$d.address}</td>
+                <td>{$d.type}</td>
+                <td>{$d.buy_time}</td>
+                <td>{$d.note}</td>
+                <td><img src="/Uploads/image/{$d.photo}" style="width: 60px; height: auto"/></td>
+
+            </tr>
+            </foreach>
+
+            <tr>
+                <td colspan="5">
+                    <div class="pagelist">{$page}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div class="note" id="note">删除成功</div>
+
+</body>
+
+<include file="Public:footer" />
+
+<script type="text/javascript">
+function del(id, url){
+    if(confirm("您确定要删除吗?")){
+        $.post(url,{id:id}, function(ret){
+            if(ret.state == '1'){
+                $("#note").show();
+                setTimeout(function () {
+                    $("#note").hide();
+                    $("#list" + id).remove();
+                }, 500);
+            }
+        });
+    }
+}
+
+
+
+
+
+</script>
+
+
+

@@ -1,0 +1,88 @@
+<include file="Public:header" />
+<body>
+<ul class="bread">
+    <li>文章列表</li>
+    <li style="float:right;">
+        <form action="__URL__/search" method="post">
+            <select name="type" class="sosoinput" style="margin-right:-5px;">
+                <foreach name="category" item="cate" key="key">
+                    <option value="{$cate.id}">{$cate.html}{$cate.name}</option>
+                </foreach>
+            </select>
+            <input type="text" name="keywords" id="keywords" value="{$keywords}" placeholder="" class="sosoinput" style="width:200px;text-indent:5px;"  />
+            <input type="submit" value="搜索" class="soso" />
+        </form>
+    </li>
+</ul>
+
+<form method="post" action="__URL__/del?all=1">
+    <div class="panel admin-panel">
+        <div class="panel-head">
+            <a href="__URL__/add" target="right" style="color:#fff; background:#09c; padding:3px 6px;">
+                <strong class="icon-plus"> 添加文章</strong>
+            </a>
+        </div>
+
+
+        <table class="table table-hover text-center">
+            <tr>
+                <th width="120">ID</th>
+                <th>分类</th>
+                <th>标题</th>
+                <th>发布时间</th>
+                <th>操作</th>
+            </tr>
+
+            <foreach name="data" item="d" key="key">
+            <tr id="list{$d.id}">
+                <td><!--<input type="checkbox" name="ids[]" value="{$d.id}" />-->{$d.id}</td>
+                <td>{$d.cate_name}</td>
+                <td>{$d.title}</td>
+                <td>{$d.pub_time|date='Y-m-d H:i:s',###}</td>
+                <td>
+                    <div class="button-group">
+                        <a href="__URL__/edit?id={$d.id}" class="button border-main" ><span class="icon-edit"></span> 修改</a>
+                        <a class="button border-red" href="javascript:void(0)" onclick="return del({$d.id},'__URL__/del')"><span class="icon-trash-o"></span> 删除</a>
+                    </div>
+                </td>
+            </tr>
+            </foreach>
+
+            <tr>
+                <td colspan="5">
+                    <div class="pagelist">{$page}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<div class="note" id="note">删除成功</div>
+
+</body>
+
+<include file="Public:footer" />
+
+<script type="text/javascript">
+function del(id, url){
+    if(confirm("您确定要删除吗?")){
+        $.post(url,{id:id}, function(ret){
+            if(ret.state == '1'){
+                $("#note").show();
+                setTimeout(function () {
+                    $("#note").hide();
+                    $("#list" + id).remove();
+                }, 500);
+            }
+        });
+    }
+}
+
+
+
+
+
+</script>
+
+
+

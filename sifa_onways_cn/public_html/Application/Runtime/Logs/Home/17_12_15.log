@@ -1,0 +1,17 @@
+[ 2017-12-15T20:16:02+08:00 ] 220.181.108.156 /show-index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `f_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `f_article` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `f_category` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid` FROM `f_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `f_category` WHERE `pid` = null  [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cate_id='' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `f_article` WHERE ( id> AND cate_id='' ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cate_id='' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `f_article` WHERE ( id> AND cate_id='' ) LIMIT 1  
+
